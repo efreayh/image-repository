@@ -1,0 +1,15 @@
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let image of images">
+      <mat-card class="mat-elevation-z4 clickable">
+        <div class="card-header" (click)="openImageDialog(image)">
+          <mat-card-title>{{image.name}}</mat-card-title>
+        </div>
+        <img mat-card-image (click)="openImageDialog(image)" src="{{image.url}}">
+        <mat-card-actions>
+          <button mat-button>SELECT</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

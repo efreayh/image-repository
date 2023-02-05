@@ -1,0 +1,25 @@
+@import '~@angular/material/theming';
+
+.content {
+    padding: 16px;
+}
+
+.mat-card-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+.clickable {
+    cursor: pointer;
+    &:hover {
+        @include mat-elevation(12);
+    }
+}
+
+.card-header {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    margin-bottom: 8px;
+}
