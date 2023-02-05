@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
-import { UploadComponent } from './pages/upload/upload.component';
 import { ImageDialogComponent } from './dialog/image-dialog/image-dialog.component';
 import { UploadDialogComponent } from './dialog/upload-dialog/upload-dialog.component';
 
@@ -24,7 +23,6 @@ import { MatInputModule } from '@angular/material/input';
   declarations: [
     AppComponent,
     HomeComponent,
-    UploadComponent,
     ImageDialogComponent,
     UploadDialogComponent
   ],
